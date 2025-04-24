@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* Import a modern font from Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
 
@@ -253,4 +254,261 @@ body > p { /* Target the direct child paragraph of body */
      margin-top: -5px; /* Add a little space below the name */
  }
 
+=======
+/* Import a modern font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* General Reset and Body Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Makes sizing easier */
+}
+
+/* Contact Us Link Styling */
+.contact-link {
+    position: absolute; /* Position relative to the nearest positioned ancestor (or body) */
+    top: 20px; /* Distance from the top */
+    right: 30px; /* Distance from the right */
+    text-decoration: none;
+    color: #3498db; /* Use the button blue color */
+    font-weight: 400;
+    padding: 8px 15px;
+    border: 1px solid #3498db; /* Matching border */
+    border-radius: 20px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.contact-link:hover {
+    background-color: #3498db; /* Blue background on hover */
+    color: white; /* White text on hover */
+}
+
+/* Optional: Back link on contact page */
+.back-link {
+    display: inline-block; /* Allow padding/margin */
+    margin: 20px; /* Space around the link */
+    text-decoration: none;
+    color: #3498db;
+}
+
+.back-link:hover {
+    text-decoration: underline;
+}
+
+body {
+    font-family: 'Poppins', sans-serif; /* Apply the imported font */
+    display: flex; /* Enable Flexbox */
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
+    min-height: 100vh; /* Ensure body takes at least full viewport height */
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%); /* Subtle modern gradient background */
+    color: #333; /* Default text color */
+    text-align: center; /* Center text within elements */
+    padding: 20px; /* Add some padding around the content */
+}
+
+/* Heading Styles */
+h1 {
+    color: #2c3e50; /* Darker blue-grey color */
+    margin-bottom: 0.5em; /* Space below the main heading */
+    font-weight: 600; /* Bolder font weight */
+}
+
+/* Introductory Paragraph Style */
+body > p { /* Target the direct child paragraph of body */
+    color: #555;
+    margin-bottom: 1.5em; /* Space below intro text */
+    font-weight: 300; /* Lighter font weight */
+}
+
+/* Button Styling */
+#randomizeButton {
+    background-color: #3498db; /* A nice blue */
+    color: white;
+    border: none;
+    padding: 15px 30px; /* Generous padding */
+    font-size: 1.1em; /* Slightly larger font */
+    font-weight: 400;
+    border-radius: 50px; /* Fully rounded ends for a modern 'pill' shape */
+    cursor: pointer; /* Indicate it's clickable */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transitions */
+    margin-bottom: 2em; /* Space below the button */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+#randomizeButton:hover {
+    background-color: #2980b9; /* Darker blue on hover */
+    transform: translateY(-2px); /* Slight lift effect on hover */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+#randomizeButton:active {
+     transform: translateY(0px); /* Button goes back down when clicked */
+     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Result Display Area Styling */
+#resultDisplay {
+    background-color: #ffffff; /* White background */
+    padding: 25px 35px;
+    border-radius: 10px; /* Slightly rounded corners */
+    min-height: 60px; /* Ensure it has some height even when empty */
+    min-width: 300px; /* Ensure minimum width */
+    max-width: 90%; /* Prevent it from getting too wide on large screens */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08); /* Slightly softer shadow */
+    font-size: 1.2em; /* Larger font for the result */
+    color: #e74c3c; /* A contrasting color for the result text */
+    font-weight: 600;
+}
+
+ #resultDisplay p {
+     color: #777; /* Initial placeholder text color */
+     font-weight: 300;
+     font-size: 1em;
+ }
+
+ /* Filter Button Container */
+.filters {
+    margin-bottom: 1.5em; /* Space below filters */
+    display: flex; /* Arrange items horizontally */
+    flex-wrap: wrap; /* Allow buttons to wrap on smaller screens */
+    justify-content: center; /* Center buttons */
+    align-items: center; /* Align items vertically */
+    gap: 10px; /* Space between filter elements */
+}
+
+.filters span {
+    margin-right: 5px; /* Space after the label */
+    color: #555;
+}
+
+/* Filter Button Styling */
+.filter-button {
+    background-color: #e9ecef; /* Light grey background */
+    color: #495057; /* Dark grey text */
+    border: 1px solid #ced4da; /* Light grey border */
+    padding: 8px 15px;
+    font-size: 0.9em;
+    border-radius: 20px; /* Rounded pill shape */
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.filter-button:hover {
+    background-color: #dee2e6; /* Slightly darker grey on hover */
+}
+
+/* Style for the ACTIVE filter button */
+.filter-button.active {
+    background-color: #007bff; /* Blue background for active */
+    color: white; /* White text for active */
+    border-color: #007bff; /* Blue border for active */
+}
+
+/* === ADD THIS ENTIRE BLOCK TO YOUR style.css === */
+
+/* Contact Form Section Styling */
+.contact-section {
+    padding: 2em;
+    background-color: #ffffff; /* White background for contrast */
+    border-radius: 10px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+    width: 90%; /* Control width */
+    max-width: 600px; /* Set a max width */
+    text-align: left; /* Align text left within the form */
+    margin: 3em auto; /* Auto horizontal margins center block elements on the page */
+}
+
+.contact-section h2 {
+    text-align: center; /* Center the form heading */
+    margin-bottom: 0.5em;
+    color: #2c3e50;
+}
+
+.contact-section p {
+     text-align: center; /* Center the intro paragraph */
+     margin-bottom: 1.5em;
+     color: #555;
+}
+
+/* Form Group Styling */
+.form-group {
+    margin-bottom: 1.5em; /* Space between form fields */
+}
+
+.form-group label {
+    display: block; /* Make label take its own line */
+    margin-bottom: 0.5em;
+    color: #333;
+    font-weight: 400;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea {
+    width: 100%; /* Make inputs fill container width */
+    padding: 12px;
+    border: 1px solid #ced4da; /* Light grey border */
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif; /* Match site font */
+    font-size: 1em;
+    color: #333;
+}
+
+.form-group textarea {
+    resize: vertical; /* Allow vertical resize only */
+}
+
+/* Submit Button Styling */
+.submit-button {
+    display: block; /* Make button take full width */
+    width: 100%;
+    background-color: #28a745; /* Green color for submit */
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.1em;
+    font-weight: 400;
+    border-radius: 5px; /* Less rounded than filter/randomize buttons */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 1em; /* Space above submit button */
+}
+
+.submit-button:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+
+/* Styling for the result text parts */
+#resultDisplay p { /* Target the container paragraph directly */
+    line-height: 1.4; /* Adjust line height for better spacing */
+    /* Remove fixed styles if previously set directly on 'p' */
+    /* color: initial; 
+       font-weight: initial;
+       font-size: initial; */
+ }
+ 
+ .food-name { /* Style for the main name */
+     color: #003366; /* Use the heading color (or your preferred color) */
+     font-weight: 700; /* Make it bold */
+     font-size: 1.2em; /* Control size */
+     display: block; /* Ensure it takes its own line if needed */
+     margin-top: -10px;
+ }
+ 
+ .food-location { /* Style for the location/description */
+     color: #4f6375; /* A slightly lighter grey */
+     font-size: 0.9em; /* Make it a bit smaller */
+     font-weight: 400; /* Normal weight */
+     display: block; /* Ensure it takes its own line */
+     margin-top: -5px; /* Add a little space below the name */
+ }
+
+>>>>>>> 476cc6f3ecb8979dace56d3ca6feae2a2056e7a1
 /* === END OF BLOCK TO ADD === */
